@@ -11,9 +11,9 @@
 
   <body>
     <div class="site-wrapper">
-      <div class="site-header">
+      <header class="site-header">
         <h1 class="site-header__title">C.Y.F</h1>
-        <div class="main-nav">
+        <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__list-item">
               <a href="index.html">Latest</a>
@@ -25,7 +25,7 @@
               <a href="contact.html">Contact</a>
             </li>
           </ul>
-        </div>
+        </nav>
         <form class="site-search" action="/search">
           <label for="search-input">
             Search
@@ -47,13 +47,13 @@
           </svg>
           <button type="submit">Submit</button>
         </form>
-      </div>
+      </header>
 
-      <main>
+      <article>
         <div class="hero">
           <img class="hero__image" src="/images/29-hero.jpg" />
           <h2 class="hero__title">
-            Duis aute irure dolor in reprehenderit in voluptate velit
+            Duis aute irure dolor in <br class="hide-default" />reprehenderit in voluptate velit
           </h2>
           <p class="hero__author">By <span>Nostrud Fugiat</span></p>
           <p class="hero__time">
@@ -61,10 +61,14 @@
           </p>
         </div>
         <div class="views">
-          <h2 class="views__title">View:</h2>
-          <a class="view-list__item" href="#">Most Popular</a>
-          <a class="view-list__item" href="#">Most Recent</a>
-          <a class="views__all" href="#">View All</a>
+          <div class="first-div-views">
+            <h2 class="views__title">View:</h2>
+            <a class="view-list__item" href="#">Most Popular</a>
+            <a class="view-list__item" href="#">Most Recent</a>
+          </div>
+          <div class="new-div-views__all">
+            <a class="views__all" href="#">View All</a>
+          </div>
         </div>
         <div class="items">
           <div class="item">
@@ -98,12 +102,13 @@
             </p>
           </div>
         </div>
-      </main>
+      </article>
 
       <footer>
         <p>
           <a href="https://github.com/CodeYourFuture/html-css-git-exercises">Built</a>
-          with ♥ for <a href="https://codeyourfuture.io/">CodeYourFuture</a>.
+          with<span id="heart-emoticon"> ♥ </span> for
+          <a href="https://codeyourfuture.io/">CodeYourFuture</a>.
         </p>
         <p>
           <svg

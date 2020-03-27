@@ -1,1 +1,60 @@
 /* Add your own CSS code below */
+
+#heart-emoticon {
+  color: #c85308;
+}
+
+.hide-default {
+  display: none;
+}
+
+.site-content {
+  display: flex;
+  justify-content: center;
+}
+
+.main-article {
+  max-width: 50em;
+  line-height: 1.5rem;
+}
+
+@media screen and (min-width: 767px) {
+  .site-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .view-list__item {
+    margin-left: 10px;
+  }
+  .first-div-views {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .views {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hero__title {
+    font-size: 3.25em;
+  }
+
+  .hide-default {
+    display: initial;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
